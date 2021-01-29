@@ -12,7 +12,7 @@
 //     document.getElementById("case-total").innerText = caseTotal;
 // });
 
-//First minus button handler
+//First minus button handler for phone casing
 
 // document.getElementById("case-decrease").addEventListener("click", function() {
 //     // console.log("working");
@@ -81,9 +81,9 @@ function calculateTotal() {
 
     document.getElementById("total-price").innerText = totalPrice;
     const tax = Math.round(totalPrice * 0.1);
-    document.getElementById("tax-amount").innerText = "$" + tax;
+    document.getElementById("tax-amount").innerText = tax;
     const grandTotal = totalPrice + tax;
-    document.getElementById("grand-total").innerText = "$" + grandTotal;
+    document.getElementById("grand-total").innerText = grandTotal;
 }
 
 function getInputValue(product) {
